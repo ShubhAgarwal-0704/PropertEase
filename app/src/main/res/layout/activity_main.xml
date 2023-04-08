@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:background="#FF9E00">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/inee"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                <TextView
+                    android:id="@+id/propertease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/archivo"
+                    android:text="PropertEase"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/notilogo"
+                    app:layout_constraintHorizontal_bias="0.459"
+                    app:layout_constraintStart_toEndOf="@+id/logo"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/notilogo"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/notification"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></ImageView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Search"
+    android:textColorHint="@color/black"
+    android:textColor="@color/black"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="12dp"
+    android:background="@drawable/rounded"
+    android:drawableRight="@drawable/baseline_search_24"
+    android:layout_marginTop="25dp">
+
+</EditText>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topPanel"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/house1"
+                            android:scaleType="fitXY"
+                            android:layout_marginRight="30dp"
+                            android:contentDescription="image"
+                            android:layout_marginLeft="10dp"></ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="₹ 56lac | 1200 sqft"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"
+                                    android:layout_marginLeft="10dp"></TextView>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/house1"
+                            android:contentDescription="image"
+                            android:layout_marginRight="30dp">
+                        </ImageView>
+                        <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                            android:scaleType="fitXY"
+                        android:src="@drawable/house1"
+                        android:contentDescription="image"
+                        android:layout_marginRight="30dp">
+                        </ImageView>
+                        <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                            android:scaleType="fitXY"
+                        android:contentDescription="image"
+                        android:src="@drawable/house1"
+                        android:layout_marginRight="30dp">
+                        </ImageView>
+                        <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:contentDescription="image"
+                        android:src="@drawable/house1"
+                            android:scaleType="fitXY"
+                        android:layout_marginRight="30dp"></ImageView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </HorizontalScrollView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ads"></ImageView>
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/house1"
+                            android:scaleType="fitXY"
+                            android:layout_marginRight="30dp"
+                            android:contentDescription="image"
+                            android:layout_marginLeft="10dp"></ImageView>
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/house1"
+                            android:scaleType="fitXY"
+                            android:contentDescription="image"
+                            android:layout_marginRight="30dp">
+                        </ImageView>
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/house1"
+                            android:scaleType="fitXY"
+                            android:contentDescription="image"
+                            android:layout_marginRight="30dp">
+                        </ImageView>
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:contentDescription="image"
+                            android:src="@drawable/house1"
+                            android:scaleType="fitXY"
+                            android:layout_marginRight="30dp">
+                        </ImageView>
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+                            android:contentDescription="image"
+                            android:src="@drawable/house1"
+                            android:scaleType="fitXY"
+                            android:layout_marginRight="30dp"></ImageView>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
